@@ -1,5 +1,6 @@
 ﻿using ASI.Basecode.WebApp.Mvc;
 using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
@@ -32,17 +33,31 @@ namespace ASI.Basecode.WebApp.Controllers
         /// Returns Home View.
         /// </summary>
         /// <returns> Home View </returns>
+
+        [HttpGet]
+        [AllowAnonymous]
         public IActionResult Index()
         {
             return View();
         }
 
+        [HttpGet]
+        [AllowAnonymous]
         public IActionResult Test()
         {
             return View();
         }
 
+        [HttpGet]
+        [AllowAnonymous]
         public IActionResult Test2()
+        {
+            return View();
+        }
+        
+        [HttpGet]
+        [AllowAnonymous]
+        public IActionResult Suficiencia()
         {
             return View();
         }
