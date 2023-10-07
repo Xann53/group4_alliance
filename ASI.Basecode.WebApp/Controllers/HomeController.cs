@@ -76,5 +76,15 @@ namespace ASI.Basecode.WebApp.Controllers
         {
             return View();
         }
+        [AllowAnonymous]
+        public IActionResult Planteras()
+        {
+            return View();
+        }
+        [AllowAnonymous]
+        public IActionResult Cardenas()
+        {
+            return View();
+        }
     }
 }
