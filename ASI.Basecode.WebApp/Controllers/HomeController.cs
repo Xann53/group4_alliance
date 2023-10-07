@@ -71,5 +71,10 @@ namespace ASI.Basecode.WebApp.Controllers
         {
             return View();
         }
+        [AllowAnonymous]
+        public IActionResult DelaRita()
+        {
+            return View();
+        }
     }
 }
