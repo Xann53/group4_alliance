@@ -61,5 +61,10 @@ namespace ASI.Basecode.WebApp.Controllers
         {
             return View();
         }
+        [AllowAnonymous]
+        public IActionResult Muana()
+        {
+            return View();
+        }
     }
 }
